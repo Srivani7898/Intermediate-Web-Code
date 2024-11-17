@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout</title>
+    <link rel="stylesheet" href="header.css">
+</head>
+<body>
+    <header class="header">
+        <h1>My Website</h1>
+    </header>
+
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- <div class="container">
+        <main class="main-content">
+            <h2>Main Content</h2>
+            <p>This is the main content area.</p>
+        </main>
+        <aside class="sidebar">
+            <h2>Sidebar</h2>
+            <p>This is the sidebar area.</p>
+        </aside>
+    </div> -->
+    <div class="form-container">
+        <form class="contact-form">
+            <h2>Contact Us</h2>
+            
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Your Phone Number">
+
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+    <footer class="footer">
+
+        <p>&copy; 2024 My Website</p>
+    </footer>
+</body>
+</html>

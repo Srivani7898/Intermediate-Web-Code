@@ -1,0 +1,150 @@
+/* Basic Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header, nav, main, aside, footer {
+    padding: 20px;
+    color: #ffffff;
+}
+
+.header {
+    background-color: #333;
+    text-align: center;
+}
+
+.navbar {
+    background-color: #444;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-list li a {
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.nav-list li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+/* Container Layout */
+/* .container {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 20px;
+    padding: 20px;
+} */
+
+/* .main-content {
+    background-color: #6c757d;
+} */
+
+/* .sidebar {
+    background-color: #495057;
+} */
+
+.form-container {
+    font-family: lucida Handwriting;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    background-color:transparent;
+    border-radius: 15px;
+    border: 5px solid black;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-left: 400px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.contact-form h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+
+.contact-form label {
+    display: block;
+    font-family: comic sans ms;
+    margin: 10px 0 5px;
+    color: #333;
+    font-weight: bolder;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="tel"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    background-color: lightcyan;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: blue;
+    color: black;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color:green;
+}
+
+.footer {
+    background-color: #333;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .header h1 {
+        font-size: 1.5em;
+    }
+
+    .nav-list li a {
+        padding: 10px;
+        font-size: 0.9em;
+    }
+}
